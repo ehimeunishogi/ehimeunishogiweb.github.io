@@ -355,7 +355,7 @@
       }
       h1 {
         background-color: #ffa500; 
-        font-size: 21px;
+        font-size: 30px;
         font-family: HG正楷書体-PRO;
       }
       h2 {
@@ -424,7 +424,7 @@
     /* サイドバー------------------- */
     .side-bar {
       list-style: none;
-      width: 200px;
+      width: 100px;
       background: #ffff00;
     }
     .side-bar li {
