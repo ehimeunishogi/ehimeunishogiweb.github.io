@@ -222,7 +222,7 @@
 /* レイアウト------------------- */
     .body_wrapper {
       /* border: 1px solid red; */
-      width: 600px;
+      width: 1200px;
       margin: 0 auto;
     }
     .main_wrapper {
@@ -230,7 +230,7 @@
       flex-direction: row-reverse;
     }
     header {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     main {
       /* background: #ccc; */
@@ -244,10 +244,10 @@
     /* お知らせ------------------- */
     .news {
       width: 90%;
-      height: 200px;
-      margin: 20px auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      height: 400px;
+      margin: 40px auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
       overflow-y: scroll;
     }
     .news li {
