@@ -61,143 +61,434 @@
   }
   
 /* 全体------------------- */
-  body {
-  }
-  h1 {
-    background-color: #ffa500; 
-    font-size: 42px;
-    font-family: HG正楷書体-PRO;
-  }
-  h2 {
-    border-bottom: 2px solid #ffa500;
-    font-size: 24px;
-  }
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+
+      body {
+      }
+      h1 {
+        background-color: #ffa500; 
+        font-size: 42px;
+        font-family: HG正楷書体-PRO;
+      }
+      h2 {
+        border-bottom: 2px solid #ffa500;
+        font-size: 24px;
+      }
 
 /* レイアウト------------------- */
-.body_wrapper {
-  /* border: 1px solid red; */
-  width: 1200px;
-  margin: 0 auto;
-}
-.main_wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-}
-header {
-  margin-bottom: 40px;
-}
-main {
-  /* background: #ccc; */
-  width: 80%;
-}
-aside {
-  width: 20%;
-  /* background: green; */
+    .body_wrapper {
+      /* border: 1px solid red; */
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .main_wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    main {
+      /* background: #ccc; */
+      width: 80%;
+    }
+    aside {
+      width: 20%;
+      /* background: green; */
+    }
+
+    /* お知らせ------------------- */
+    .news {
+      width: 90%;
+      height: 400px;
+      margin: 40px auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow-y: scroll;
+    }
+    .news li {
+      line-height: 1.4;
+      padding-top: 4px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #999;
+    }
+    .news li dt {
+      font-size: 14px;
+      color: #999;
+    }
+    .news li dt {
+      font-size: 16px;
+    }
+
+    /* インフォメーション------------------- */
+    .info {
+      width: 90%;
+      margin: 0 auto;
+      border: 2px solid#333;
+      padding: 16px;
+      line-height: 2;
+    }
+    .info li:before {
+      content: '●';
+      color: #333;
+    }
+
+    /* サイドバー------------------- */
+    .side-bar {
+      list-style: none;
+      width: 200px;
+      background: #ffff00;
+    }
+    .side-bar li {
+      padding: 5%;
+      border-bottom: 1px solid #ccc;
+    }
+    .side-bar li:hover,
+    .side-bar li:active {
+      cursor: pointer;
+      background: #fff;
+      /* opacity: 0.6; */
+    }
+
+
+    /* 部室案内------------------- */
+    .map {
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .map figure {
+      margin-bottom: 20px;
+    }
+
+    .map figure img {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .map .kanban {
+      width: 40%;
+    }
+
+    /* 部員紹介------------------- */
+    .buin-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .buin-table th,
+    .buin-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    .buin-table th:last-child,
+    .buin-table td:last-child {
+      width: 60%;
+    }
+
+    /* 部員紹介------------------- */
+    .taikai-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .taikai-table th,
+    .taikai-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    /* .taikai-table th:last-child,
+    .taikai-table td:last-child {
+      width: 60%;
+    } */
 }
 
-/* お知らせ------------------- */
-.news {
-  width: 90%;
-  height: 400px;
-  margin: 40px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow-y: scroll;
-}
-.news li {
-  line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #999;
-}
-.news li dt {
-  font-size: 14px;
-  color: #999;
-}
-.news li dt {
-  font-size: 16px;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+      body {
+      }
+      h1 {
+        background-color: #ffa500; 
+        font-size: 42px;
+        font-family: HG正楷書体-PRO;
+      }
+      h2 {
+        border-bottom: 2px solid #ffa500;
+        font-size: 24px;
+      }
+
+/* レイアウト------------------- */
+    .body_wrapper {
+      /* border: 1px solid red; */
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .main_wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    main {
+      /* background: #ccc; */
+      width: 80%;
+    }
+    aside {
+      width: 20%;
+      /* background: green; */
+    }
+
+    /* お知らせ------------------- */
+    .news {
+      width: 90%;
+      height: 400px;
+      margin: 40px auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow-y: scroll;
+    }
+    .news li {
+      line-height: 1.4;
+      padding-top: 4px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #999;
+    }
+    .news li dt {
+      font-size: 14px;
+      color: #999;
+    }
+    .news li dt {
+      font-size: 16px;
+    }
+
+    /* インフォメーション------------------- */
+    .info {
+      width: 90%;
+      margin: 0 auto;
+      border: 2px solid#333;
+      padding: 16px;
+      line-height: 2;
+    }
+    .info li:before {
+      content: '●';
+      color: #333;
+    }
+
+    /* サイドバー------------------- */
+    .side-bar {
+      list-style: none;
+      width: 200px;
+      background: #ffff00;
+    }
+    .side-bar li {
+      padding: 5%;
+      border-bottom: 1px solid #ccc;
+    }
+    .side-bar li:hover,
+    .side-bar li:active {
+      cursor: pointer;
+      background: #fff;
+      /* opacity: 0.6; */
+    }
+
+
+    /* 部室案内------------------- */
+    .map {
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .map figure {
+      margin-bottom: 20px;
+    }
+
+    .map figure img {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .map .kanban {
+      width: 40%;
+    }
+
+    /* 部員紹介------------------- */
+    .buin-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .buin-table th,
+    .buin-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    .buin-table th:last-child,
+    .buin-table td:last-child {
+      width: 60%;
+    }
+
+    /* 部員紹介------------------- */
+    .taikai-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .taikai-table th,
+    .taikai-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    /* .taikai-table th:last-child,
+    .taikai-table td:last-child {
+      width: 60%;
+    } */
 }
 
-/* インフォメーション------------------- */
-.info {
-  width: 90%;
-  margin: 0 auto;
-  border: 2px solid#333;
-  padding: 16px;
-  line-height: 2;
-}
-.info li:before {
-  content: '●';
-  color: #333;
-}
+@media screen and (max-width: 767px) {
 
-/* サイドバー------------------- */
-.side-bar {
-  list-style: none;
-  width: 200px;
-  background: #ffff00;
-}
-.side-bar li {
-  padding: 5%;
-  border-bottom: 1px solid #ccc;
-}
-.side-bar li:hover,
-.side-bar li:active {
-  cursor: pointer;
-  background: #fff;
-  /* opacity: 0.6; */
-}
+      body {
+      }
+      h1 {
+        background-color: #ffa500; 
+        font-size: 42px;
+        font-family: HG正楷書体-PRO;
+      }
+      h2 {
+        border-bottom: 2px solid #ffa500;
+        font-size: 24px;
+      }
+
+/* レイアウト------------------- */
+    .body_wrapper {
+      /* border: 1px solid red; */
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .main_wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    main {
+      /* background: #ccc; */
+      width: 80%;
+    }
+    aside {
+      width: 20%;
+      /* background: green; */
+    }
+
+    /* お知らせ------------------- */
+    .news {
+      width: 90%;
+      height: 400px;
+      margin: 40px auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow-y: scroll;
+    }
+    .news li {
+      line-height: 1.4;
+      padding-top: 4px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #999;
+    }
+    .news li dt {
+      font-size: 14px;
+      color: #999;
+    }
+    .news li dt {
+      font-size: 16px;
+    }
+
+    /* インフォメーション------------------- */
+    .info {
+      width: 90%;
+      margin: 0 auto;
+      border: 2px solid#333;
+      padding: 16px;
+      line-height: 2;
+    }
+    .info li:before {
+      content: '●';
+      color: #333;
+    }
+
+    /* サイドバー------------------- */
+    .side-bar {
+      list-style: none;
+      width: 200px;
+      background: #ffff00;
+    }
+    .side-bar li {
+      padding: 5%;
+      border-bottom: 1px solid #ccc;
+    }
+    .side-bar li:hover,
+    .side-bar li:active {
+      cursor: pointer;
+      background: #fff;
+      /* opacity: 0.6; */
+    }
 
 
-/* 部室案内------------------- */
-.map {
-  width: 100%;
-  margin: 40px auto;
-}
+    /* 部室案内------------------- */
+    .map {
+      width: 100%;
+      margin: 40px auto;
+    }
 
-.map figure {
-  margin-bottom: 20px;
-}
+    .map figure {
+      margin-bottom: 20px;
+    }
 
-.map figure img {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-.map .kanban {
-  width: 40%;
-}
+    .map figure img {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .map .kanban {
+      width: 40%;
+    }
 
-/* 部員紹介------------------- */
-.buin-table {
-  margin: 40px auto;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-}
-.buin-table th,
-.buin-table td {
-  border: 1px solid #999;
-  padding: 4px;
-}
-.buin-table th:last-child,
-.buin-table td:last-child {
-  width: 60%;
-}
+    /* 部員紹介------------------- */
+    .buin-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .buin-table th,
+    .buin-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    .buin-table th:last-child,
+    .buin-table td:last-child {
+      width: 60%;
+    }
 
-/* 部員紹介------------------- */
-.taikai-table {
-  margin: 40px auto;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
+    /* 部員紹介------------------- */
+    .taikai-table {
+      margin: 40px auto;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .taikai-table th,
+    .taikai-table td {
+      border: 1px solid #999;
+      padding: 4px;
+    }
+    /* .taikai-table th:last-child,
+    .taikai-table td:last-child {
+      width: 60%;
+    } */
 }
-.taikai-table th,
-.taikai-table td {
-  border: 1px solid #999;
-  padding: 4px;
-}
-/* .taikai-table th:last-child,
-.taikai-table td:last-child {
-  width: 60%;
-} */
