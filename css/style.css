@@ -366,7 +366,7 @@
 /* レイアウト------------------- */
     .body_wrapper {
       /* border: 1px solid red; */
-      width: 375px;
+      width: 360px;
       margin: 0 auto;
     }
     .main_wrapper {
