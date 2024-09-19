@@ -424,7 +424,7 @@
     /* サイドバー------------------- */
     .side-bar {
       list-style: none;
-      width: 100px;
+      width: 80px;
       background: #ffff00;
     }
     .side-bar li {
